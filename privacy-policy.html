@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KamKaj | Privacy Policy</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --orange: #ff4f1f;
+            --orange-light: #ff6b35;
+            --navy: #10182d;
+            --white: #ffffff;
+            --background: #f5f6f8;
+            --text: #222936;
+            --gray: #687080;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: var(--background);
+
+            color: var(--text);
+
+            line-height: 1.75;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f1f,
+                    #ff6b35
+                );
+
+            color: white;
+
+            padding: 45px 20px 55px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "KK";
+
+            position: absolute;
+
+            right: -20px;
+            bottom: -80px;
+
+            font-size: 300px;
+
+            font-weight: 900;
+
+            color: rgba(255,255,255,0.06);
+        }
+
+        .header-inner {
+            max-width: 950px;
+
+            margin: auto;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .brand {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 35px;
+        }
+
+        .brand img {
+            width: 65px;
+            height: 65px;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .brand-name {
+            font-size: 25px;
+
+            font-weight: 800;
+        }
+
+
+        header h1 {
+            font-size: 46px;
+
+            line-height: 1.1;
+
+            margin-bottom: 12px;
+        }
+
+        header p {
+            opacity: 0.9;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================== */
+
+        .container {
+            max-width: 950px;
+
+            margin: -25px auto 60px;
+
+            padding: 0 20px;
+
+            position: relative;
+
+            z-index: 5;
+        }
+
+        .policy {
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 50px;
+
+            box-shadow:
+                0 15px 50px rgba(0,0,0,0.08);
+        }
+
+
+        .intro {
+            background: #fff4ef;
+
+            border-left: 5px solid var(--orange);
+
+            padding: 20px 22px;
+
+            border-radius: 10px;
+
+            margin-bottom: 35px;
+        }
+
+
+        h2 {
+            color: var(--navy);
+
+            font-size: 25px;
+
+            margin-top: 38px;
+
+            margin-bottom: 12px;
+
+            padding-bottom: 8px;
+
+            border-bottom: 1px solid #eee;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+
+        h3 {
+            margin-top: 25px;
+
+            color: var(--navy);
+        }
+
+
+        p {
+            margin: 12px 0;
+        }
+
+
+        ul {
+            padding-left: 25px;
+
+            margin: 10px 0 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           ACCOUNT DELETION
+        ========================== */
+
+        .deletion {
+            background: var(--navy);
+
+            color: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            margin: 20px 0;
+        }
+
+        .deletion h3 {
+            color: white;
+
+            margin-top: 0;
+
+            margin-bottom: 10px;
+        }
+
+        .deletion p {
+            color: #d9dce4;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-box {
+            margin-top: 40px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f1f,
+                    #ff6b35
+                );
+
+            color: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+        }
+
+        .contact-box h2 {
+            color: white;
+
+            border: none;
+
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: white;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           BACK BUTTON
+        ========================== */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            background: var(--navy);
+
+            color: white;
+
+            padding: 12px 20px;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            text-align: center;
+
+            padding: 30px 20px;
+
+            color: var(--gray);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 35px 20px 60px;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            .policy {
+                padding: 28px 22px;
+            }
+
+            .brand img {
+                width: 55px;
+                height: 55px;
+            }
+
+            .brand-name {
+                font-size: 21px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="brand">
+
+            <img
+                src="assets/kamkaj_logo.png"
+                alt="KamKaj Logo">
+
+            <div class="brand-name">
+                KamKaj
+            </div>
+
+        </div>
+
+
+        <h1>
+            Privacy Policy
+        </h1>
+
+        <p>
+            Last updated: September 14, 2026
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     POLICY
+========================== -->
+
+<div class="container">
+
+<div class="policy">
+
+
+<div class="intro">
+
+    <strong>
+        Your privacy matters to KamKaj.
+    </strong>
+
+    <p>
+        This Privacy Policy explains how KamKaj collects, uses,
+        protects and handles information when you use our application.
+    </p>
+
+</div>
+
+
+
+<h2>
+    1. Introduction
+</h2>
+
+<p>
+KamKaj ("KamKaj", "we", "us", or "our") operates a mobile application
+designed to connect people looking for work with employers looking for
+workers.
+</p>
+
+<p>
+This Privacy Policy explains what information we may collect,
+how we use it, how it may be shared, and the choices available to users.
+</p>
+
+
+
+<h2>
+    2. Information We Collect
+</h2>
+
+<p>
+Depending on how you use KamKaj, we may collect:
+</p>
+
+<ul>
+
+    <li>Name</li>
+
+    <li>Phone number</li>
+
+    <li>Email address, where provided</li>
+
+    <li>Profile information</li>
+
+    <li>Job-related information</li>
+
+    <li>Location information provided by the user</li>
+
+    <li>Job posting information</li>
+
+    <li>Profile or verification images uploaded by the user</li>
+
+    <li>Information required to operate and secure user accounts</li>
+
+    <li>Information voluntarily provided through the application</li>
+
+</ul>
+
+
+
+<h2>
+    3. How We Use Information
+</h2>
+
+<p>
+We may use collected information to:
+</p>
+
+<ul>
+
+    <li>Create and manage user accounts.</li>
+
+    <li>Provide job-search and job-posting services.</li>
+
+    <li>Connect employers with potential workers.</li>
+
+    <li>Display relevant job opportunities.</li>
+
+    <li>Send job notifications and alerts.</li>
+
+    <li>Improve application functionality and performance.</li>
+
+    <li>Prevent fraud, abuse and unauthorized activity.</li>
+
+    <li>Maintain the security of our services.</li>
+
+    <li>Respond to user requests and support inquiries.</li>
+
+</ul>
+
+
+
+<h2>
+    4. Location Information
+</h2>
+
+<p>
+KamKaj may use location-related information to help users discover
+jobs relevant to their area.
+</p>
+
+<p>
+Users may also provide a location manually when creating or viewing
+job information.
+</p>
+
+<p>
+Location information is used for purposes related to the services
+provided by KamKaj.
+</p>
+
+
+
+<h2>
+    5. Photos and Images
+</h2>
+
+<p>
+KamKaj may allow users to upload profile photographs, verification
+documents or other images related to their use of the service.
+</p>
+
+<p>
+Users should only upload information that they are authorized to
+provide.
+</p>
+
+
+
+<h2>
+    6. Job Information
+</h2>
+
+<p>
+When an employer creates a job listing, information provided in the
+listing may be visible to other KamKaj users.
+</p>
+
+<p>
+Users should avoid including unnecessary sensitive or private
+information in publicly visible job listings.
+</p>
+
+
+
+<h2>
+    7. Communication
+</h2>
+
+<p>
+KamKaj may provide features that allow users to contact employers or
+job seekers directly, including phone calls or external messaging
+services.
+</p>
+
+<p>
+When users choose to contact another user through an external service,
+that communication may be subject to the privacy policy and terms of
+that external service.
+</p>
+
+
+
+<h2>
+    8. Service Providers
+</h2>
+
+<p>
+KamKaj may use third-party service providers to help operate the
+application, including services for database hosting, authentication,
+notifications, infrastructure and application functionality.
+</p>
+
+
+
+<h2>
+    9. Data Security
+</h2>
+
+<p>
+We take reasonable measures to protect information handled through
+KamKaj against unauthorized access, alteration, disclosure or
+destruction.
+</p>
+
+<p>
+However, no method of electronic transmission or storage can be
+guaranteed to be completely secure.
+</p>
+
+
+
+<h2>
+    10. Data Retention
+</h2>
+
+<p>
+We retain information for as long as reasonably necessary to provide
+our services, maintain accounts, comply with legal obligations,
+resolve disputes and enforce our agreements.
+</p>
+
+<p>
+When information is no longer required, we may delete or anonymize it,
+subject to applicable legal and operational requirements.
+</p>
+
+
+
+<h2>
+    11. Account Deletion
+</h2>
+
+
+<div class="deletion">
+
+    <h3>
+        Requesting account deletion
+    </h3>
+
+    <p>
+        Users may request deletion of their KamKaj account and
+        associated personal information.
+    </p>
+
+    <p>
+        To request account deletion, contact us using the email address
+        listed below and include enough information for us to identify
+        your account.
+    </p>
+
+</div>
+
+
+<p>
+Some information may be retained where necessary to comply with legal
+obligations, prevent fraud, resolve disputes, or maintain legitimate
+business records.
+</p>
+
+
+
+<h2>
+    12. Children's Privacy
+</h2>
+
+<p>
+KamKaj is not intended to knowingly collect personal information from
+children in violation of applicable laws.
+</p>
+
+
+
+<h2>
+    13. Changes to This Privacy Policy
+</h2>
+
+<p>
+We may update this Privacy Policy from time to time.
+</p>
+
+<p>
+When changes are made, the updated policy will be published on this
+page and the "Last updated" date will be changed accordingly.
+</p>
+
+
+
+<!-- CONTACT -->
+
+<div class="contact-box">
+
+    <h2>
+        14. Contact KamKaj
+    </h2>
+
+    <p>
+        For privacy questions, account deletion requests or other
+        privacy-related concerns:
+    </p>
+
+    <p>
+
+        <strong>
+            KamKaj
+        </strong>
+        <br>
+
+        Email:
+
+        <a
+            href="mailto:kamkaj666@gmail.com">
+
+            kamkaj666@gmail.com
+
+        </a>
+
+    </p>
+
+</div>
+
+
+
+<h2>
+    15. Consent
+</h2>
+
+<p>
+By using KamKaj, you acknowledge that you have read and understood
+this Privacy Policy.
+</p>
+
+
+
+<a
+    href="index.html"
+    class="back">
+
+    ← Back to KamKaj
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<footer>
+
+    © 2026 KamKaj. All rights reserved.
+
+</footer>
+
+
+</body>
+
+</html>
