@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delete Your KamKaj Account</title>
+
+    <meta
+        name="description"
+        content="Request deletion of your KamKaj account and associated data."
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f8fa;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6b35, #ff8a5b);
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .brand img {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: white;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Main */
+        main {
+            max-width: 900px;
+            margin: 55px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #fff0eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #101828;
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #667085;
+            max-width: 650px;
+            margin: 0 auto 35px;
+            font-size: 16px;
+        }
+
+        h2 {
+            color: #101828;
+            font-size: 21px;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #475467;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 10px 0 20px 25px;
+            color: #475467;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Deletion box */
+        .delete-box {
+            margin-top: 35px;
+            padding: 30px;
+            border-radius: 16px;
+            background: #fff7f4;
+            border: 1px solid #ffd5c7;
+        }
+
+        .delete-box h2 {
+            color: #d9481e;
+            margin-top: 0;
+        }
+
+        .steps {
+            margin-top: 20px;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .number {
+            min-width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: #ff6b35;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .step-content strong {
+            color: #101828;
+        }
+
+        /* Button */
+        .email-button {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .email-button:hover {
+            background: #e95725;
+            transform: translateY(-1px);
+        }
+
+        /* Data section */
+        .data-box {
+            margin-top: 30px;
+            background: #f8fafc;
+            border-radius: 14px;
+            padding: 25px;
+            border: 1px solid #e4e7ec;
+        }
+
+        .data-box h3 {
+            margin-bottom: 12px;
+            color: #101828;
+        }
+
+        /* Warning */
+        .notice {
+            margin-top: 25px;
+            padding: 18px;
+            border-left: 4px solid #ff6b35;
+            background: #fffaf8;
+            color: #475467;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #101828;
+            color: #98a2b3;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer a {
+            color: #ff8a5b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .nav {
+                padding: 0 18px;
+            }
+
+            .brand {
+                font-size: 20px;
+            }
+
+            .brand img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .back-link {
+                font-size: 14px;
+            }
+
+            main {
+                margin: 30px auto;
+                padding: 0 15px;
+            }
+
+            .card {
+                padding: 28px 20px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .delete-box {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav">
+
+            <a href="index.html" class="brand">
+                <img src="assets/kamkaj_logo.png" alt="KamKaj Logo">
+                KamKaj
+            </a>
+
+            <a href="index.html" class="back-link">
+                ← Back to Home
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="card">
+
+            <div class="icon">
+                🗑️
+            </div>
+
+            <h1>Delete Your KamKaj Account</h1>
+
+            <p class="subtitle">
+                If you no longer want to use KamKaj, you can request
+                deletion of your account and the personal data associated
+                with your account.
+            </p>
+
+
+            <!-- Deletion Request -->
+            <div class="delete-box">
+
+                <h2>Request Account Deletion</h2>
+
+                <p>
+                    To request deletion of your KamKaj account, send us an
+                    email using the button below.
+                </p>
+
+                <p>
+                    Please include the <strong>phone number or email address
+                    associated with your KamKaj account</strong> so that we
+                    can verify and process your request.
+                </p>
+
+                <a
+                    class="email-button"
+                    href="mailto:YOUR-EMAIL@example.com?subject=KamKaj%20Account%20Deletion%20Request"
+                >
+                    Request Account Deletion
+                </a>
+
+            </div>
+
+
+            <!-- Steps -->
+            <h2>How the deletion process works</h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="number">1</div>
+
+                    <div class="step-content">
+                        <strong>Submit your request</strong>
+                        <p>
+                            Send us an account deletion request using the
+                            button above.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="number">2</div>
+
+                    <div class="step-content">
+                        <strong>Account verification</strong>
+                        <p>
+                            We may verify that the request belongs to the
+                            account owner before processing the deletion.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="number">3</div>
+
+                    <div class="step-content">
+                        <strong>Account deletion</strong>
+                        <p>
+                            Once verified, your KamKaj account and associated
+                            personal data will be deleted, subject to any
+                            information we are legally required to retain.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Data -->
+            <div class="data-box">
+
+                <h3>What data will be deleted?</h3>
+
+                <p>
+                    Depending on the information associated with your
+                    account, deletion may include:
+                </p>
+
+                <ul>
+                    <li>Your account and profile information</li>
+                    <li>Your phone number or other account information</li>
+                    <li>Job posts associated with your account</li>
+                    <li>Profile images and uploaded content</li>
+                    <li>Other personal information associated with your account</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Retention -->
+            <div class="notice">
+
+                <strong>Important:</strong>
+                Certain information may be retained when required for
+                legitimate legal, security, fraud-prevention, or regulatory
+                purposes. Any applicable retention is handled according to
+                our privacy policy.
+
+            </div>
+
+
+            <!-- Privacy Policy -->
+            <h2>Privacy Policy</h2>
+
+            <p>
+                For more information about how KamKaj collects, uses,
+                protects, and handles user information, please read our
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>.
+            </p>
+
+
+            <!-- Contact -->
+            <h2>Need Help?</h2>
+
+            <p>
+                If you have questions about account deletion or your
+                personal data, please contact the KamKaj support team.
+            </p>
+
+            <a
+                class="email-button"
+                href="mailto:kamkaj666@gmail.com"
+            >
+                Contact KamKaj Support
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            <strong>KamKaj</strong> — Work. Connect. Grow.
+        </p>
+
+        <p>
+            © 2026 KamKaj. All rights reserved.
+        </p>
+
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            &nbsp; | &nbsp;
+            <a href="delete-account.html">Delete Account</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
